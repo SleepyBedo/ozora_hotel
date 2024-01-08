@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     color: black;
 }
@@ -14,6 +18,13 @@ body {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
+}
+
+.snow {
+    position: absolute;
+    z-index: 100;
+}
+.container2 {
     overflow: hidden;
 }
 
@@ -21,10 +32,6 @@ body {
     width: 100%;
     display: flex;
     animation: slide 20s infinite
-}
-
-img {
-    width: 100%;
 }
 
 @keyframes slide {
@@ -53,3 +60,4 @@ img {
         transform: translateX(-300%);
     }
 }
+
