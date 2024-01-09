@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-    max-width: 990px;
     width: 100%;
     position: absolute;
     transform: translateX(-50%);
@@ -24,7 +23,10 @@ body {
     position: absolute;
     z-index: 100;
 }
+
 .container2 {
+    margin-top: -15%;
+    position: relative;
     overflow: hidden;
 }
 
@@ -60,4 +62,32 @@ body {
         transform: translateX(-300%);
     }
 }
+
+.top h1 img{
+    max-width: 990px;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    display: block;
+    padding-top: 39%;
+    padding-left: 1%;
+}
+
+.top h2 img {
+    max-width: 990px;
+    width: 70%;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.text {
+    animation: fadein ease 5s;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 
