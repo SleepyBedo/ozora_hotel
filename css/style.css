@@ -144,6 +144,10 @@ body {
     margin-left: 1.0em;
 }
 
+.nav li:last-child{
+    border-right: none;
+}
+
 #family {
     background-color: #83addc;
     max-width: 1880px;
@@ -164,14 +168,13 @@ body {
 
 .slider {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     height: 800px;
     margin: 20px;
     text-align: center;
     border-radius: 20px;
-    overflow: hidden;
+    overflow:hidden ;
     position: relative;
-
 }
 
 .slides {
@@ -180,11 +183,6 @@ body {
     position: relative;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-
-}
-
-.slide:nth-of-type(even) {
-    background-color: rgb(250, 246, 212);
 }
 
 .slide {
@@ -192,23 +190,30 @@ body {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    padding: 6.3%;
+    padding-bottom: 10%;
+    border-radius: 20px;
     width: 100%;
-    height: 900px;
     scroll-snap-align: center;
     margin-right: 0px;
     box-sizing: border-box;
-    background: white;
+    background: rgb(255, 255, 255);
     transform-origin: center center;
     transform: scale(1);
 }
 
 .slides p {
-    height: 200px;
+    
     font-size: 24px;
     font-family: "HGPGothicM";
     color: rgb(0, 0, 0);
     line-height: 1.2;
     text-align: center;
+    margin-top: 3%;
+}
+
+.slide img {
+    max-width: 700px;
 }
 
 .slide a {
@@ -218,16 +223,12 @@ body {
 
 a.slide__prev,
 .slider::before {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: 5%;
+    left: 9%;
 }
 
 a.slide__next,
 .slider::after {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    right: 5%;
+    right: 9%;
 }
 
 .slider::before,
@@ -235,14 +236,13 @@ a.slide__next,
 .slide__prev,
 .slide__next {
     position: absolute;
-    top: 48%;
+    top: 40%;
     width: 35px;
     height: 35px;
-    border: solid rgb(255, 255, 255);
-    border-width: 0 4px 4px 0;
     padding: 3px;
     box-sizing: border-box;
 }
+
 
 .slider::before,
 .slider::after {
@@ -255,7 +255,7 @@ a.slide__next,
 .slider__nav {
     box-sizing: border-box;
     position: absolute;
-    bottom: -3%;
+    bottom: 2% ;
     left: 50%;
     width: 200px;
     margin-left: -100px;
@@ -269,7 +269,7 @@ a.slide__next,
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: rgba(5, 5, 3, 0.719);
+    background-color: rgba(88, 88, 80, 0.719);
     margin: 0 10px 0 10px;
 }
 
