@@ -162,7 +162,6 @@ body {
 
 .slider-container {
     display: flex;
-    height: 100%;
     justify-content: center;
 }
 
@@ -273,4 +272,54 @@ a.slide__next,
     margin: 0 10px 0 10px;
 }
 
+.button {
+    margin-top: 10%;
+    display: flex;
+}
 
+.fambutton1 ,.fambutton2{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.fambutton2 {
+    width: 34%;
+    margin-top: -9%;
+}
+
+.fambutton1 img:hover, .fambutton2 img:hover{
+    opacity: 80%;
+}
+
+#child {
+    background-color: #dc83ad;
+    max-width: 1880px;
+    width: 100%;
+    height: 2155px;
+    background-image: url(img/childbg.png);
+}
+
+#child h1 img {
+    margin-top: 5%;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
