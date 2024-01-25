@@ -12,6 +12,12 @@ body {
     color: black;
 }
 
+.pagewrap{
+    max-width: 990px;
+    width: 100%;
+    margin: auto;
+}
+
 .container {
     width: 100%;
     position: absolute;
@@ -254,21 +260,19 @@ a.slide__next,
 .slider__nav {
     box-sizing: border-box;
     position: absolute;
-    bottom: 2% ;
+    bottom: 5%;
     left: 50%;
     width: 200px;
     margin-left: -100px;
     text-align: center;
-    overflow: visible;
-    z-index: 100;
 }
 
 .slider__navlink {
-    display:inline-block;
+    display: inline-block;
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: rgba(88, 88, 80, 0.719);
+    background-color: black;
     margin: 0 10px 0 10px;
 }
 
@@ -278,14 +282,14 @@ a.slide__next,
 }
 
 .fambutton1 ,.fambutton2{
-    width: 40%;
+    width: 50%;
     display: block;
     margin: auto;
 }
 
 .fambutton2 {
-    width: 34%;
-    margin-top: -9%;
+    width: 40%;
+    margin-top: -11%;
 }
 
 .fambutton1 img:hover, .fambutton2 img:hover{
@@ -301,7 +305,19 @@ a.slide__next,
 }
 
 #child h1 img {
-    margin-top: 5%;
+    margin-top: 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 6vw);
+    grid-gap: 15px;
+    background-color: white;
+    padding: 3%;  
+    border-radius: 20px;
+    margin-top: 8%;
+    position: relative;
 }
 
 .gallery__img {
@@ -312,14 +328,67 @@ a.slide__next,
 
 .gallery__item--1 {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.gallery__item--2 {
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.gallery__item--2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    }
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.gallery__item--5 {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    font-size: clamp(1rem, 1.8vw, 2rem);
+    font-family: "HGPKyokashotai";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+}
+
+.hedgehog {
+    position: absolute;
+    width: 15%;
+    left: -5%;
+    top: -12%;
+}
+.childbutton {
+    position: relative;
+}
+
+.childimgbutton {
+    width: 90%;
+    display: block;
+    margin-left: 12%;
+    margin-top: -8%;
+}
+
+.childimgbutton:hover{
+    opacity: 80%;
+}
+
+.rabbit {
+    position: absolute;
+    width: 15%;
+    right: 1.5%;
+    bottom: 0%;
+}
