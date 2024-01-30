@@ -156,9 +156,9 @@ body {
 
 #family {
     background-color: #83addc;
-    max-width: 1880px;
+    max-width: 1903px;
     width: 100%;
-    height: 2200px;
+    height: 2000px;
     background-image: url(img/familybg.png);
 }
 
@@ -298,7 +298,7 @@ a.slide__next,
 
 #child {
     background-color: #dc83ad;
-    max-width: 1880px;
+    max-width: 1903px;
     width: 100%;
     height: 2155px;
     background-image: url(img/childbg.png);
@@ -391,4 +391,126 @@ a.slide__next,
     width: 15%;
     right: 1.5%;
     bottom: 0%;
+}
+
+#camp {
+    background-color: #399b39;
+    max-width: 1903px;
+    width: 100%;
+    height: 2250px;
+    background-image: url(img/campbg.png);
+}
+
+#camp h1 img {
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.campcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 2.5%;
+    border-radius: 20px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+
+    li {
+        flex: auto;
+    }
+
+    a {
+        display: block;
+    }
+
+    img {
+        width: 20vmin;
+        height: 12vmin;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.thumbnails img{
+    opacity: 40%;
+}
+
+.thumbnails img:hover{
+    opacity: 90%;
+}
+
+.slides {
+    overflow: hidden;
+    width: 120vmin;
+    height: 60vmin;
+}
+
+.slides li {
+    position: absolute;
+    z-index: 1;
+}
+
+.slides img {
+    width: 80vmin;
+    height: 60vmin;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.slides li:target {
+    z-index: 3;
+    -webkit-animation: slide 1s 1;
+}
+
+.slides li:not(:target) {
+    -webkit-animation: hidden 1s 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes hidden {
+    0% {
+        z-index: 2;
+    }
+
+    100% {
+        z-index: 2;
+    }
+}
+
+#camp h2 {
+    margin-top: 5%;
+}
+
+.campbutton {
+    display: flex;
+}
+
+.campbutton1,
+.campbutton2 {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.campbutton1:hover,
+.campbutton2:hover{
+    opacity: 60%;
+} 
+
+.campbutton1 {
+margin-top: 8%;
 }
