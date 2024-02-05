@@ -263,6 +263,12 @@ a.fslide__next,
     pointer-events: none;
 }
 
+.fslide__prev:hover,
+.fslide__next:hover {
+    transform: scale(1.3);
+    transition: transform 1s;
+}
+
 .fslider__nav {
     box-sizing: border-box;
     position: absolute;
@@ -280,6 +286,10 @@ a.fslide__next,
     border-radius: 50%;
     background-color: rgb(255, 255, 255, 0.658);
     margin: 0 10px 0 10px;
+}
+
+.fslider__navlink:hover {
+    background-color: rgba(255, 255, 255, 0.918);
 }
 
 .button {
@@ -631,6 +641,12 @@ a.bslide__next,
     pointer-events: none;
 }
 
+.bslide__prev:hover,
+.bslide__next:hover {
+    border: solid rgba(255, 255, 255, 0.877);
+    border-width: 0 10px 10px 0;
+}
+
 .bslider__nav {
     box-sizing: border-box;
     position: absolute;
@@ -648,6 +664,10 @@ a.bslide__next,
     border-radius: 50%;
     background-color: rgb(255, 255, 255, 0.658);
     margin: 0 10px 0 10px;
+}
+
+.bslider__navlink:hover {
+    background-color: rgba(255, 255, 255, 0.918);
 }
 
 .review {
@@ -892,5 +912,8 @@ a.bslide__next,
 }
 #buffet {
     padding-bottom: 20%;
+}
+.footer {
+    padding: 5% 0 15%;
 }
 }
